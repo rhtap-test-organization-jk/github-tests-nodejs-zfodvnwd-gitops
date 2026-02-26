@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: github-tests-nodejs-zfodvnwd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: github-tests-nodejs-zfodvnwd 
+  name: github-tests-nodejs-zfodvnwd
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: github-tests-nodejs-zfodvnwd 
